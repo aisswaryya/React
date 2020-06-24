@@ -16,9 +16,11 @@ class ListContacts extends Component {
     <p>{contact.name}</p>
     <p>{contact.handle}</p>
     </div>
-    <button className ='contact-remove'>   
-    Remove
-     </button>
+    <button
+    onClick ={() => this.props.onDeleteContacts(contacts)}
+    className ='contact-remove'>
+        Remove
+    </button>
     </li>
 ))}
             </ol>
